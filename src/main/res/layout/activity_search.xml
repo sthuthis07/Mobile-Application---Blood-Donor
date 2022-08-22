@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@drawable/bd1">
+
+    <TextView
+        android:id="@+id/searchheading"
+        android:layout_width="413dp"
+        android:layout_height="77dp"
+        android:background="#F64343"
+        android:text="Search Donor"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iid"
+        android:layout_width="184dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter Donor Name:"
+        android:textColor="#FF0015"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchheading" />
+
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iqty" />
+
+    <Button
+        android:id="@+id/searchitem"
+        android:layout_width="210dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="onClick"
+        android:text="Search Donor"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iid"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/dtype"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itype" />
+
+    <TextView
+        android:id="@+id/did"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_id" />
+
+    <TextView
+        android:id="@+id/dname"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iname" />
+
+    <TextView
+        android:id="@+id/iname"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_id" />
+
+
+    <TextView
+        android:id="@+id/iqty"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iname" />
+
+    <TextView
+        android:id="@+id/itype"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iqty" />
+
+    <TextView
+        android:id="@+id/search_id"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchitem" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="171dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="onClick"
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itype"
+        tools:ignore="OnClick" />
+
+
+
+    <EditText
+        android:id="@+id/keyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FF0000"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

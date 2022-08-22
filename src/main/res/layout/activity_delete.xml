@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteActivity"
+    android:background="@drawable/bd1">
+
+    <TextView
+        android:id="@+id/deleteheading"
+        android:layout_width="413dp"
+        android:layout_height="77dp"
+        android:background="#FF0000"
+        android:text="Delete Donor"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iid"
+        android:layout_width="160dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="44dp"
+        android:text="Enter Donor Name :"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteheading" />
+    <EditText
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="@+id/iid"
+        app:layout_constraintTop_toTopOf="@+id/iid" />
+
+    <Button
+        android:id="@+id/deleteitem"
+        android:layout_width="185dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="onClick"
+        android:text="Delete Donor"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
